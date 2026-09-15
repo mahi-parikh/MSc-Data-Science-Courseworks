@@ -1,0 +1,14 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+scipy
+imbalanced-learn
+ucimlrepo
+kagglehub
+
+# Note: the notebooks were originally run in Google Colab and import
+# `google.colab` (for drive.mount) in several places. This is only
+# available inside Colab itself and is not installable via pip — remove
+# or guard those cells when running locally / in Jupyter.
