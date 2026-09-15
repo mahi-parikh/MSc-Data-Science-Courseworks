@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PG10 Coursework Deployment</title>
+</head>
+<body>
+<h1>PG10 Sarcasm and Sentiment Classifier</h1>
+
+<p>Current device: {{ device }}</p>
+
+<form method="POST">
+<p><strong>Task</strong></p>
+<input type="radio" name="task" value="sarcasm" {% if task == "sarcasm" %}checked{% endif %}> Sarcasm
+<input type="radio" name="task" value="sentiment" {% if task == "sentiment" %}checked{% endif %}> Sentiment
+
+<p><strong>English Variety</strong></p>
+<input type="radio" name="variety" value="en-AU" {% if variety == "en-AU" %}checked{% endif %}> en-AU
+<input type="radio" name="variety" value="en-IN" {% if variety == "en-IN" %}checked{% endif %}> en-IN
+<input type="radio" name="variety" value="en-UK" {% if variety == "en-UK" %}checked{% endif %}> en-UK
+
+<p><strong>Input Text</strong></p>
+<input type="text" name="text" value="{{ text or '' }}" size="100" required>
+
+<p><input type="submit" value="Predict"></p>
+</form>
+
+{% if prediction is not none %}
+<h2>Prediction</h2>
+<p>Predicted Label: {{ prediction }}</p>
+{% endif %}
+
+{% if error %}
+<h2>Error</h2>
+<p>{{ error }}</p>
+{% endif %}
+</body>
+</html>

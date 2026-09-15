@@ -1,0 +1,6 @@
+# R dependencies — install with:
+# install.packages(c("caret", "lattice", "ggplot2"))
+
+caret      # classification/regression training, confusion matrix utilities
+lattice    # plotting (caret dependency)
+ggplot2    # plotting (caret dependency)

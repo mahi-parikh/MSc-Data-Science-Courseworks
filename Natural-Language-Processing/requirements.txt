@@ -1,0 +1,23 @@
+# Training / experimentation (main.ipynb)
+torch>=2.0
+transformers>=4.40
+datasets
+peft
+trl
+accelerate
+bitsandbytes
+sentencepiece
+safetensors
+scikit-learn
+scipy
+pandas
+numpy
+matplotlib
+seaborn
+spacy
+nltk
+evaluate
+
+# Deployment (app.py)
+flask
+huggingface_hub
