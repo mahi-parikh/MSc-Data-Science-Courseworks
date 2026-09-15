@@ -65,7 +65,7 @@ To run these notebooks outside Colab:
 
 ## Authors
 
-MacLearnDS6 — Mahi Mahesh Parikh and other 4 members
+MacLearnDS6 — Mahi Mahesh Parikh and other 5 members
 
 ## Acknowledgements
 
